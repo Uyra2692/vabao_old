@@ -1,0 +1,71 @@
+// Steps of selling
+.steps-of-selling
+	padding: 80px 0 140px
+	h3
+		max-width: 580px
+		width: 100%
+		margin: 0 auto
+		text-align: center
+		padding-bottom: 65px
+	&__steps
+		margin: 0 auto
+		max-width: 1250px
+		width: 100%
+	&__item
+		flex-basis: 33.3%
+		flex-direction: column
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			bottom: 72px
+			right: -4px	
+			background: url("../img/svg/arrow90.svg") no-repeat
+			background-size: cover
+			height: 15px
+			width: 8px
+			z-index: 10
+		span
+			font-size: 20px
+			line-height: 24px
+			text-align: center
+			letter-spacing: 0.02em
+			font-family: 'ProximaNove-Sm'
+			color: $dark
+			padding-top: 18px
+			width: 250px
+			position: relative
+	&__icon
+		height: 120px
+		width: 120px
+		border-radius: 50%
+		background: $light-blue
+		position: relative
+		z-index: 5
+		justify-content: center
+		&::after
+			content: ''
+			position: absolute
+			top: calc(50% - 48px)
+			left: calc(50% - 48px)
+			width: 92px
+			height: 92px
+			border-radius: 50%
+			border: 2px solid rgba($primary-color, 0.45)
+			z-index: 10
+		&::before
+			content: ''
+			position: absolute
+			top: 59px
+			left: 120px
+			width: 300px
+			height: 2px
+			background: $light-blue-second
+			z-index: -1
+	&__item
+		&:nth-child(3)
+			.steps-of-selling__icon::before
+				display: none
+	&__item:last-child
+		&::after
+			display: none

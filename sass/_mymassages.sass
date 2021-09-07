@@ -1,0 +1,287 @@
+
+.my-massages
+	position: relative
+	padding: 80px 0 80px
+	&::before
+		content: ''
+		z-index: 1
+		width: 100%
+		background: #F4F7FB
+		position: absolute
+		top: 0px
+		height: 275px
+	&::after
+		content: ''
+		position: absolute
+		top: 225px
+		z-index: 1
+		background: url("../img/svg/triangle-1.svg") no-repeat
+		background-size: cover
+		background-position: center top
+		width: 100%
+		height: 50px
+	&__container
+		z-index: 10
+	&__wrapper
+		margin: 0 auto
+		border-radius: 15px
+		box-shadow: 0px 10px 35px rgba(12, 50, 123, 0.07)
+		max-width: 1210px
+		width: 100%
+		background: $white
+		height: 650px
+	&__part-left
+		padding: 0
+		width: 100%
+		max-width: 430px
+	&__part-left-unactive
+		transform: translateX( -100%)
+	&__search
+		margin: 0 35px
+		height: 84px
+		align-items: center
+		position: relative
+		color: #8E8E8E !important
+		input
+			outline: none
+			margin: 0
+			padding: 0
+			border: 0
+			width: 100%
+			padding: 14px 25px
+			border-radius: 3px
+			border: 1px solid rgba(49, 91, 173, 0.35)
+		button
+			background: none
+			border: 0
+			outline: none
+			cursor: pointer
+			position: absolute
+			right: 15px
+			top: calc(50% - 10.5px)
+			svg
+				rect
+					stroke: #8E8E8E
+					transition: ease 0.5s
+				path
+					stroke: #8E8E8E
+					transition: ease 0.5s
+				&:hover
+					rect
+						stroke: $primary-color
+					path
+						stroke: $primary-color
+	&__chat
+		width: 100%
+		max-width: 780px
+		background: #FAFBFD
+		overflow: hidden
+		border-radius: 0 15px 15px 0
+	&__chat-active
+		transform: translate(0%, -100%) !important
+	&__contacts
+		overflow: auto
+		-ms-overflow-style: none
+		&::-webkit-scrollbar
+			display: none
+		height: calc(100% - 87px)
+	.contacts
+		&__item
+			padding: 10px 35px
+			cursor: pointer
+			transition: ease 0.5s
+			border-top: 1px solid rgba(#2F6CE2, 0.15)
+			&:hover
+				background: rgba($primary-color, 0.1)
+		&__img
+			border-radius: 50%
+			height: 60px
+			width: 60px
+			img
+				border-radius: 50%
+				height: 60px
+				width: 60px
+		&__inf
+			margin-left: 20px
+			p 
+				overflow: hidden
+				max-height: 18px
+				padding-top: 6px
+	.chat 
+		border-left: 1px solid rgba($primary-color, 0.15)
+		&__header-line
+			height: 84px
+			width: 100%
+			background: $white
+			border-bottom: 1px solid rgba($primary-color, 0.3)
+		&__return
+			height: 40px
+			width: 40px
+			border-radius: 50%
+			background: rgba($primary-color, 0.1)
+			margin-right: 25px
+			display: none
+			&::after
+				content: ''
+				display: block
+				height: 18px
+				width: 18px
+				margin: 11px auto 0
+				transform: rotate(180deg)
+				background: url("../img/svg/arrow.svg") no-repeat center center 
+		&__contact
+			margin-left: 25px
+		&__img
+			border-radius: 50%
+			height: 45px
+			width: 45px
+			img
+				border-radius: 50%
+				height: 45px
+				width: 45px
+		&__inf
+			margin-left: 20px
+			h5 
+				a
+					font-size: 17px
+					line-height: 21px
+					color: $dark
+			p
+				font-size: 13px
+				opacity: 0.7
+		&__complain
+			height: 40px
+			width: 40px
+			background: rgba($primary-color, 0.1)
+			border-radius: 6px
+			margin-right: 35px
+			cursor: pointer
+			&::after
+				content: ''
+				display: block
+				height: 22px
+				width: 22px
+				margin: 8px auto 0
+				background: url("../img/svg/complain.svg") no-repeat center center 
+		&__main
+			height: calc(100% - 170px)
+			width: 100%
+			padding: 0
+			overflow: auto
+			-ms-overflow-style: none
+			&::-webkit-scrollbar
+				display: none
+		&__massage
+			div
+				background: #EEF1F5
+				border-radius: 0 6px 6px 6px
+				max-width: 450px
+				margin: 0 23px
+				padding: 10px 45px 10px 15px
+				position: relative
+				margin-bottom: 5px
+				span
+					position: absolute
+					bottom: 5px
+					right: 8px
+					font-size: 13px
+					color: rgba($dark, 0.6)
+			.first
+				&::before
+					content: ''
+					position: absolute
+					top: 0
+					left: -16px
+					height: 17px
+					width: 17px
+					background: url("../img/svg/massage-triangle.svg") no-repeat center center
+			&:first-child
+				margin-top: 20px
+		&__own-massage
+			div
+				background: #DDE9FF
+				border-radius: 6px 0 6px 6px
+				max-width: 450px
+				margin: 0 23px 0 auto
+				padding: 10px 15px 10px 45px
+				position: relative
+				margin-bottom: 5px
+				span
+					position: absolute
+					bottom: 5px
+					left: 8px
+					font-size: 13px
+					color: rgba($dark, 0.6)
+			.first
+				&::before
+					content: ''
+					position: absolute
+					top: 0
+					right: -16px
+					height: 17px
+					width: 17px
+					background: url("../img/svg/massage-o-triangle.svg") no-repeat center center
+		&__alert
+			margin: 20px 0
+		&__massage-alert
+			margin-bottom: 10px
+			div
+				background: #EEF1F5
+				border-radius: 6px
+				max-width: 100%
+				margin: 0 23px
+				padding: 20px 45px 30px 25px
+				position: relative
+				margin-bottom: 5px
+				.icon 
+					height: 18px
+					width: 18px
+					background: url("../img/svg/alert.svg") no-repeat center center
+					margin: 0 15px 0 0
+					padding: 0
+				a 
+					font-family: 'ProximaNove-Rg'
+				span
+					position: absolute
+					bottom: 5px
+					right: 8px
+					font-size: 13px
+					color: rgba($dark, 0.6)
+		&__line
+			margin: 0 23px 25px
+			span 
+				color: rgba(#0C327B, 0.4)
+		&__separator
+			width: 40%
+			height: 1px
+			background: rgba($primary-color, 0.25)
+		&__footer-line
+			height: 84px
+			width: 100%
+			background: $white
+			border-top: 1px solid rgba($primary-color, 0.3)
+			form
+				width: 100%
+			textarea
+				border: 0
+				margin: 0
+				padding: 0
+				outline: none
+				font-size: 17px !important
+				text-align: 21px
+				color: #8E8E8E !important
+				white-space: pre-wrap
+				resize: none
+				height: 21px
+				width: calc(100% - 117px)
+				margin-right: 15px
+		&__add-file
+			padding: 0
+			margin: 0 25px 0 20px
+			height: 20px
+			width: 20px
+		&__send
+			padding: 0
+			margin: 0 35px 0 auto
+			height: 18px
+			width: 22px

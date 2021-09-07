@@ -1,0 +1,624 @@
+// Media
+@media screen and (max-height: 935px)
+	.logIn-form
+		&__wrapper
+			height: 100%
+			padding: 0
+			top: 0
+			border-radius: 0
+			h3
+				text-align: center
+@media screen and (max-height: 830px)
+	.register-form
+		&__wrapper
+			height: 100%
+			padding: 0
+			top: 0
+			border-radius: 0
+			h3
+				text-align: center
+	.my-massages
+		padding: 80px 0 20px
+		&__wrapper
+			height: 600px
+@media screen and (max-width: 1680px)
+	.header__container
+		width: calc(100% - 40px)
+	.separator__container
+		width: calc(100% - 40px)
+	.footer__container
+		width: calc(100% - 40px)
+@media screen and (max-width: 1500px)
+	.offer
+		&__container
+			width: calc(100% - 40px)
+	.numbers__container
+		max-width: 100%
+		width: calc(100% - 40px)
+	.sell-account__container
+		width: calc(100% - 40px)
+	.steps-of-selling__container
+		width: calc(100% - 40px)
+	.steps-of-buying__container
+		width: calc(100% - 40px)
+	.buy-account__container
+		width: calc(100% - 40px)
+	.comments__container
+		width: calc(100% - 40px)
+	.my-massages__container
+		width: calc(100% - 40px)
+@media screen and (max-width: 1500px)
+	.footer
+		&__container
+			flex-direction: column
+		&__right-nav
+			margin-top: 35px
+		&__second-line
+			.footer__container
+				flex-direction: row
+@media screen and (max-width: 1330px)
+	.sell-account__wrapper
+		padding: 55px 70px
+	.buy-account__wrapper
+		padding: 55px 70px
+@media screen and (max-width: 1290px)
+	.about__container
+		img
+			width: 55%
+		.about__content
+			margin-left: 60px
+	.sell-account__wrapper
+		img
+			width: 50%
+	.buy-account__wrapper
+		img
+			width: 50%
+	.buy-account
+		&::before
+			top: 237px
+		&::after
+			top: 552px
+@media screen and (max-width: 1200px)
+	.comments
+		&__photos-slider
+			padding: 0 115px
+			.slick-prev
+				left: 75px
+			.slick-next
+				right: 75px
+@media screen and (max-width: 1100px)
+	.header
+		flex-wrap: wrap
+		&__separator
+			display: block
+		&__right-nav
+			.header__search
+				display: none
+		&__container_search
+			display: block
+	.offer
+		display: none
+		background: url("../img/bg-jpg/offer-bg-2.jpg") no-repeat top center
+		background-size: cover
+		&::after
+			opacity: 0.25
+		&::before
+			opacity: 0.25
+		&__container
+			flex-wrap: wrap
+			justify-content: center
+		&__part
+			flex-basis: 50%
+			.part__wrapper
+				align-items: center
+				h2 
+					text-align: center
+					color: $white
+				p 
+					text-align: center
+					width: 80%
+					color: $white
+				a 
+					background: $white
+					color: $primary-color
+			&:last-child
+				.part__wrapper
+					flex-direction: column
+					align-items: center
+					h2 
+						text-align: center
+					p 
+						text-align: center
+						width: 80%
+	.about
+		padding: 80px 0 120px
+		&__container
+			flex-direction: column
+			img
+				width: 70%
+		&__content
+			width: 100%
+			max-width: 70%
+			margin: 45px 0 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			h3
+				text-align: center
+				max-width: 100%
+				margin: 0
+	.sell-account__wrapper
+		flex-direction: column
+		max-width: 550px
+		margin: 0 auto
+		padding: 55px 0
+		.sell-account__content
+			display: flex
+			align-items: center
+			flex-direction: column
+			h3 
+				text-align: center
+			p 
+				text-align: center
+				padding-bottom: 50px
+		img
+			display: none
+	.buy-account__wrapper
+		flex-direction: column
+		max-width: 550px
+		margin: 0 auto
+		padding: 55px 0
+		.buy-account__content
+			display: flex
+			align-items: center
+			flex-direction: column
+			h3 
+				text-align: center
+			p 
+				text-align: center
+				padding-bottom: 50px
+		img
+			display: none
+	.buy-account
+		&::before
+			top: 117px
+		&::after
+			top: 432px
+@media screen and (max-width: 1000px)
+	.offer
+		&__part
+			flex-basis: 100%
+			height: auto
+			justify-content: center
+			&:last-child
+				justify-content: center
+	.numbers
+		&::before
+			top: 115px
+			height: 457px
+		&::after
+			top: 522px
+	.numbers__item
+		flex-wrap: wrap
+		flex-basis: calc(50% - 2px)
+		&:nth-child(1)
+			border-bottom: 2px rgba($primary-color, 0.07) solid
+			&::after
+				top: -25px
+		&:nth-child(2)
+			border-right: 0
+			border-bottom: 2px rgba($primary-color, 0.07) solid
+			&::after
+				top: -25px
+		&:nth-child(3)
+			border-right: 0
+		&:nth-child(4)
+			border-right: 0
+			border-left: 2px rgba($primary-color, 0.07) solid
+	.comments
+		&__photos-slider
+			padding: 0 115px
+			.slick-prev
+				left: 75px
+			.slick-next
+				right: 75px
+	.my-massages
+		&__part-left
+			max-width: 350px
+@media screen and (max-width: 900px)
+	.header
+		&__left-nav
+			max-width: 70px
+		&__right-nav
+			max-width: 70px
+			div
+				margin-left: 0
+				&:last-child
+					margin-left: 5px
+		&__rules
+			display: none
+		&__support
+			display: none
+		&__menu
+			display: none
+		.menu-burger-smart
+			display: flex
+		.menu-burger-add
+			display: none
+		&__menu-burger
+			&:hover
+				span
+					background: $dark
+					&::after
+						background: $dark
+					&::before
+						background: $dark
+	.steps-of-selling__icon
+		&::before
+			width: 170px
+	.steps-of-buying__icon
+		&::before
+			width: 170px
+	.comments
+		&__photos-slider
+			padding: 0 35px
+			.slick-prev
+				left: 35px
+			.slick-next
+				right: 35px
+	.my-massages
+		padding: 80px 0 20px
+@media screen and (max-width: 800px)
+	.steps-of-selling__steps
+		flex-wrap: wrap
+		justify-content: center
+	.steps-of-selling__item
+		flex-basis: 50%
+	.steps-of-selling__item
+		padding-bottom: 55px
+		&::after
+			display: none
+		&:last-child
+			padding-bottom: 0
+	.steps-of-selling__icon
+		&::before
+			display: none
+	.steps-of-buying__steps
+		flex-wrap: wrap
+		justify-content: center
+	.steps-of-buying__item
+		flex-basis: 50%
+	.steps-of-buying__item
+		padding-bottom: 55px
+		&::after
+			display: none
+		&:last-child
+			padding-bottom: 0
+	.steps-of-buying__icon
+		&::before
+			display: none
+	.comments
+		&__photos-slider
+			padding: 0 55px
+			.slick-prev
+				left: 25px
+			.slick-next
+				right: 25px
+	.my-massages
+		&__part-left
+			max-width: 300px
+@media screen and (max-width: 730px)
+	.about__container
+		flex-direction: column
+		img
+			width: 85%
+		.about__content
+			max-width: 100%
+			width: 100%
+			margin: 45px 0 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			h3
+				text-align: center
+				max-width: 100%
+				margin: 0
+				padding: 0 20px 35px
+	.footer
+		&__container
+			flex-direction: row
+			align-items: flex-start
+			justify-content: space-around
+		&__left-nav
+			flex-direction: column
+			align-items: flex-start
+		&__menu
+			padding-top: 35px
+			ul
+				flex-direction: column
+				align-items: flex-start
+				margin-left: 0
+				li 
+					padding-bottom: 15px
+		&__right-nav
+			flex-direction: column
+			align-items: flex-start
+			margin-top: 0
+			.right-nav__item
+				margin: 25px 0 0
+				&:first-child
+					margin: 0
+		&__second-line
+			.footer__container
+				justify-content: space-between
+@media screen and (max-width: 700px)
+	.search-form
+		&__cross
+			position: absolute
+		&__search
+			max-width: 660px
+			width: 100%
+			input
+				max-width: calc(100% - 46px)
+		&__extradition
+			max-width: 100%
+		&__wrapper
+			height: 100%
+			max-width: 100%
+			width: 100%
+			left: 0
+			top: 0
+			padding: 0
+			border-radius: 0
+			form
+				max-width: 100%
+				margin: 65px 20px
+	.comments
+		&__photos-slider
+			padding: 0 85px
+			.slick-prev
+				left: 75px
+			.slick-next
+				right: 75px
+	.my-massages
+		&__wrapper
+			height: 600px
+			overflow: hidden
+			flex-wrap: wrap
+		&__part-left
+			max-width: 100%
+			height: 100%
+			transition: 0.5s ease
+		&__chat
+			max-width: 100%
+			height: 100%
+			transition: 0.5s ease
+			transform: translate(100%, -100%)
+		.chat__return
+			display: block
+@media screen and (max-width: 650px)
+	.header
+		flex-wrap: wrap
+	.about
+		padding: 80px 0 120px
+	.steps-of-selling
+		padding: 0 0 120px
+	.steps-of-buying
+		padding: 120px 0
+	.comments
+		padding: 60px 0 120px 
+	.numbers
+		display: none
+		&::before
+			top: 115px
+			height: 821px
+		&::after
+			top: 886px
+	.numbers__item
+		flex-wrap: wrap
+		flex-basis: 100%
+		&:nth-child(1n)
+			border-right: 0
+			border-bottom: 2px rgba($primary-color, 0.07) solid
+		&:nth-child(4)
+			border: 0
+	.sell-account__wrapper
+		padding: 55px 25px
+	.buy-account__wrapper
+		padding: 55px 25px
+@media screen and (max-width: 550px)
+	a
+		font-family: 'ProximaNove-Sm'
+		text-decoration: none
+		line-height: 18px
+		font-size: 15px
+	h2 
+		font-size: 32px
+		font-family: 'ProximaNove-Blck'
+		color: $dark
+		line-height: 37px
+	h3 
+		font-size: 28px
+		font-family: 'ProximaNove-ExB'
+		color: $dark
+		line-height: 34px
+	h4 
+		font-size: 25px
+		font-family: 'ProximaNove-Bld'
+		color: $dark
+		line-height: 24px
+	h5
+		font-size: 18px
+		font-family: 'ProximaNove-Bld'
+		color: $dark
+		line-height: 22px
+	p 
+		font-family: 'ProximaNove-Rg'
+		line-height: 19px
+		font-size: 16px
+	.offer
+		max-width: 100%
+		width: 100%
+		&__container
+			max-width: 100%
+			width: 100%
+		&__part
+			flex-basis: 100%
+			height: 50%
+			justify-content: center
+			border-bottom: 1px solid rgba($white, 0.5)
+			padding: 0 20px
+			opacity: 1
+			&:last-child
+				justify-content: center
+				border-bottom: 1px solid rgba($white, 0.5)
+	.buy-account__content
+		p 
+			font-size: 17px
+			line-height: 21px
+	.register-form
+		&__cross
+			position: absolute
+		&__register
+			max-width: 100%
+			width: calc(100% - 40px)
+			margin: 75px 20px
+		&__wrapper
+			height: 100%
+			width: calc(100% - 40px)
+			left: 0
+			top: 0
+			max-width: 100%
+			width: 100%
+			padding: 0
+			border-radius: 0
+			h3
+				text-align: center
+	.logIn-form
+		&__cross
+			position: absolute
+		&__wrapper
+			height: 100%
+			width: calc(100% - 40px)
+			left: 0
+			top: 0
+			padding: 0
+			border-radius: 0
+			max-width: 100%
+			width: 100%
+			h3
+				text-align: center
+		&__separator
+			max-width: 100%
+			width: calc(100% - 40px)
+			margin: 45px 20px
+		&__register
+			max-width: 100%
+			width: calc(100% - 40px)
+			margin: 0 20px 75px
+		&__logIn
+			max-width: 100%
+			width: calc(100% - 40px)
+			margin: 75px 20px
+	.pass-remember-form
+		&__cross
+			position: absolute
+		&__form
+			max-width: 100%
+			width: calc(100% - 40px)
+			margin: 75px 20px
+		&__wrapper
+			height: 100%
+			width: calc(100% - 40px)
+			left: 0
+			top: 0
+			max-width: 100%
+			width: 100%
+			padding: 0
+			border-radius: 0
+			h3
+				text-align: center
+	.comments__item
+		position: relative
+		height: 200px
+		img 
+			margin: 0 auto
+			width: 200px
+			height: 200px
+			border-radius: 15px
+			position: absolute
+			top: 0
+			left: calc(50% - 100px)
+		h4
+			&::after
+				bottom: -18px
+	.comments
+		&__photos-slider
+			padding: 0 25px
+			.slick-prev
+				left: 15px
+			.slick-next
+				right: 15px 
+@media screen and (max-width: 500px)
+	.header
+		&__separator
+			display: block
+		&__right-nav
+			.header__search
+				display: none
+		&__container_search
+			display: block
+	.my-massages__container
+		width: calc(100% - 20px)
+	.my-massages
+		padding: 40px 0 20px
+		&__wrapper
+			height: 550px
+		.chat 
+			&__contact
+				margin-left: 15px
+				p 
+					font-size: 11px
+					line-height: 14px
+			&__return
+				margin-right: 15px
+			&__complain
+				margin-right: 15px
+			&__add-file
+				margin-left: 15px
+			&__send
+				margin: 0 15px 0 auto
+@media screen and (max-width: 400px)
+	.offer
+		&__part
+			.part__wrapper
+				h2 
+					font-size: 30px
+					line-height: 40px
+				p
+					max-width: 100%
+	.footer
+		&__container
+			flex-direction: column
+			align-items: center
+		&__left-nav
+			align-items: center
+			padding-bottom: 35px
+		&__menu
+			ul
+				align-items: center
+				li 
+					margin-right: 0
+		&__second-line
+			.footer__container
+				flex-direction: column-reverse
+				align-items: center
+		&__protected
+			padding-top: 15px
+	.comments
+		&__photos-slider
+			padding: 0 15px
+			.slick-prev
+				left: 0
+			.slick-next
+				right: 0

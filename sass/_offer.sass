@@ -1,0 +1,86 @@
+// Offer
+.offer
+	height: 689px
+	background: #FCFDFD
+	position: relative
+	background: url("../img/svg/offer-bg.svg") no-repeat top center
+	background-size: auto
+	position: relative
+	transition: ease 0.7s
+	box-shadow: 0px 10px 85px rgba(12, 50, 123, 0.06)
+	&::after
+		content: ''
+		position: absolute
+		background: $white
+		opacity: 0.1
+		right: 0
+		top: 0
+		height: 100%
+		width: 50%
+		z-index: 1
+		transition: ease 0.7s
+	&::before
+		content: ''
+		position: absolute
+		background: $white
+		opacity: 0.1
+		left: 0
+		top: 0
+		height: 100%
+		width: 50%
+		z-index: 1
+		transition: ease 0.7s
+	&-mouseover-left
+		&::after
+			content: ''
+			position: absolute
+			background: $white
+			opacity: 0.6
+			right: 0
+			top: 0
+			height: 100%
+			width: 50%
+			z-index: 1
+			transition: ease 0.7s
+	&-mouseover-right
+		&::before
+			content: ''
+			position: absolute
+			background: $white
+			opacity: 0.6
+			left: 0
+			top: 0
+			height: 100%
+			width: 50%
+			z-index: 1
+			transition: ease 0.7s
+	&__container
+		height: 100%
+		align-items: center
+	&__part
+		flex-basis: 50%
+		z-index: 10
+		height: 100%
+		&:last-child
+			justify-content: flex-end
+		.part__wrapper
+			flex-direction: column
+			align-items: flex-start
+			h2 
+				max-width: 520px
+			p 
+				padding: 15px 0 35px
+				max-width: 400px
+				width: 100%
+				font-family: 'ProximaNove-Sm'
+				font-size: 18px
+				line-height: 22px
+				letter-spacing: 0.02em
+		&:last-child
+			.part__wrapper
+				flex-direction: column
+				align-items: flex-end
+				h2 
+					text-align: end
+				p 
+					text-align: end
